@@ -1,10 +1,14 @@
+import Header from "../Header/Header";
+
 import "./App.css";
 
 function App() {
   return (
-    <>
-      <h1>Howdy 🤠</h1>
-    </>
+    <div className="page">
+      <div className="page__content">
+        <Header />
+      </div>
+    </div>
   );
 }
 
