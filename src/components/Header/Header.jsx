@@ -2,7 +2,7 @@ import "./Header.css";
 import logo from "../../assets/wtwr-logo.svg";
 import avatar from "../../assets/avatar.png";
 
-function Header() {
+function Header({ handleAddClick }) {
   const currentDate = new Date().toLocaleString("default", {
     month: "long",
     day: "numeric",
@@ -13,7 +13,13 @@ function Header() {
       <header className="header">
         <img src={logo} alt="What to Wear" className="header__logo" />
         <p className="header__date-location">{currentDate}, LOCATION</p>
-        <button className="header__add-clothes-btn">+ Add clothes</button>
+        <button
+          type="button"
+          className="header__add-clothes-btn"
+          onClick={handleAddClick}
+        >
+          + Add clothes
+        </button>
         <div className="header__user-container">
           <p className="header__username">Terrence Tegegne</p>
           <img src={avatar} alt="Terrence Tegegne" className="header__avatar" />
