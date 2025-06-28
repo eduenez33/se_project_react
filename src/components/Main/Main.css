@@ -1,6 +1,6 @@
 .cards__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   list-style-type: none;
   padding: 0;
