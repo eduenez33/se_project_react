@@ -1,0 +1,26 @@
+@import url(../ModalWithForm/ModalWithForm.css);
+
+.modal__close {
+  background-image: url("../../assets/icon_close_white.svg");
+}
+
+.modal__content_type_image {
+  padding: 0;
+  overflow: hidden;
+}
+
+.modal__text-content {
+  padding: 20px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal__caption,
+.modal__weather {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
