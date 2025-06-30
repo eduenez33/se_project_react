@@ -1,6 +1,6 @@
 @import url(../ModalWithForm/ModalWithForm.css);
 
-.modal__close {
+.modal__close_type_preview {
   background-image: url("../../assets/icon_close_white.svg");
 }
 
