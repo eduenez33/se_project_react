@@ -1,7 +1,14 @@
 import "./SideBar.css";
 
+import avatar from "../../assets/avatar.png";
+
 function SideBar() {
-  return <span>Hello from the sidebar</span>;
+  return (
+    <div className="sidebar">
+      <img src={avatar} alt="" className="sidebar__avatar" />
+      <p className="sidebar__username">Terrence Tegegne</p>
+    </div>
+  );
 }
 
 export default SideBar;

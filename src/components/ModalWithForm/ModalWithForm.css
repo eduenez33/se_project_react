@@ -98,6 +98,10 @@
   color: #00000080;
 }
 
+.modal__label_type_radio:has(.modal__radio-input:checked) {
+  color: #000;
+}
+
 .modal__radio-input {
   margin-right: 8px;
   accent-color: #00000080;
