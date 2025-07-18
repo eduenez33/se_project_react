@@ -3,14 +3,14 @@ import ClothesSection from "../ClothesSection/ClothesSection";
 
 import "./Profile.css";
 
-function Profile() {
+function Profile({ onAddItem }) {
   return (
     <div className="profile">
       <section className="profile__sidebar">
         <SideBar />
       </section>
       <section className="profile__clothing-items">
-        <ClothesSection />
+        <ClothesSection onAddItem={onAddItem} />
       </section>
     </div>
   );
