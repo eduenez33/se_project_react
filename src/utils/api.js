@@ -35,4 +35,4 @@ const deleteItem = (id) => {
   });
 };
 
-export { getItems, addItem, deleteItem };
+export { request, getItems, addItem, deleteItem };
