@@ -11,8 +11,8 @@ import ItemModal from "../ItemModal/ItemModal";
 import AddItemModal from "../AddItemModal/AddItemModal";
 import Profile from "../Profile/Profile";
 
-import CurrentTemperatureUnitContext from "../../contexts/CurrentTemperatureUnitContext.jsx";
-import ClothingItemsContext from "../../contexts/ClothingItemsContext.jsx";
+import CurrentTemperatureUnitContext from "../../contexts/CurrentTemperatureUnitContext.js";
+import ClothingItemsContext from "../../contexts/ClothingItemsContext.js";
 
 import "./App.css";
 
