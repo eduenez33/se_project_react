@@ -61,7 +61,9 @@ function App() {
 
         handleModalClose();
       })
-      .catch(console.error);
+      .catch((error) => {
+        console.error("Failed to delete the item", error);
+      });
   };
 
   useEffect(() => {
