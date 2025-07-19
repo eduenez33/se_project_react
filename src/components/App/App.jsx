@@ -45,11 +45,10 @@ function App() {
   };
 
   const handleAddItemModalSubmit = ({ name, imageUrl, weather }) => {
-    addItem({ name, imageUrl, weather }).then(({ name, imageUrl, weather }) => {
-      setClothingItems((prev) => [{ name, imageUrl, weather }, ...prev]);
+    addItem({ name, imageUrl, weather }).then((item) => {
+      setClothingItems((prev) => [item, ...prev]);
+      handleModalClose();
     });
-
-    handleModalClose();
   };
 
   const handleItemDelete = (card) => {
