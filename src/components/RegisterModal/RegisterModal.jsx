@@ -69,24 +69,24 @@ function RegisterModal({ isOpen, handleModalClose, activeModal, onSubmit }) {
           required
         />
       </label>
-      <label htmlFor="userName" className="modal__label">
+      <label htmlFor="signUpUserName" className="modal__label">
         Name*{" "}
         <input
           type="text"
           className="modal__input"
-          id="userName"
+          id="signUpUserName"
           placeholder="Name"
           value={name}
           onChange={handleNameChange}
           required
         />
       </label>
-      <label htmlFor="avatarURL" className="modal__label">
+      <label htmlFor="signUpAvatarURL" className="modal__label">
         Avatar URL{" "}
         <input
           type="url"
           className="modal__input"
-          id="avatarURL"
+          id="signUpAvatarURL"
           placeholder="Avatar URL"
           onChange={handleAvatarUrlChange}
           value={avatarUrl}

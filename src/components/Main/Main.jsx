@@ -5,8 +5,6 @@ import ItemCard from "../ItemCard/ItemCard";
 
 import CurrentTemperatureUnitContext from "../../contexts/CurrentTemperatureUnitContext";
 
-import { defaultClothingItems } from "../../utils/constants";
-
 import "./Main.css";
 
 function Main({ weatherData, handleCardClick, clothingItems, onCardLike }) {

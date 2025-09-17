@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { getWeather, filterWeatherData } from "../../utils/WeatherApi.js";
-import { coordinates, APIkey } from "../../utils/constants.js";
+import {
+  coordinates,
+  APIkey,
+  defaultClothingItems,
+} from "../../utils/constants.js";
 import {
   getItems,
   addItem,
@@ -34,7 +38,7 @@ function App() {
     temp: { F: 999, C: 999 },
     city: "",
   });
-  const [clothingItems, setClothingItems] = useState([]);
+  const [clothingItems, setClothingItems] = useState(defaultClothingItems);
   const [activeModal, setActiveModal] = useState("");
   const [activeCard, setActiveCard] = useState({});
   const [currentTemperatureUnit, setCurrentTemperatureUnit] = useState("F");
