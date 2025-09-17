@@ -33,3 +33,21 @@
   object-fit: cover;
   object-position: center;
 }
+
+.card__like-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__like-icon {
+  width: 18px;
+  height: 16px;
+}
