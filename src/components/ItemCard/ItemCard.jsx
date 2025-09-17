@@ -17,7 +17,7 @@ function ItemCard({ item, onCardClick, onCardLike }) {
 
   const isLiked =
     currentUser && item.likes && Array.isArray(item.likes)
-      ? item.likes.some((id) => id === currentUser._id)
+      ? item.likes.some((id) => id === currentUser?._id)
       : false;
 
   const handleLike = () => {
